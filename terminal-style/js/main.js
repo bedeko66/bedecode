@@ -28,10 +28,10 @@ contact.addEventListener('click', () => {
     title: 'Contact Me',
     width: '400px',
     height: '400px',
-    top: 150,
+    top: 50,
     right: 50,
     bottom: 50,
-    left: 250,
+    left: 50,
     mount: contactContent,
     onfocus: function () {
       this.setBackground('#00aa00')
