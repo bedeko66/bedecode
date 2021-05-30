@@ -787,7 +787,7 @@ section .container {
 
 .contact .php-email-form {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(33, 33, 33, 0.721);
   border-radius: 20px;
 }
 
@@ -842,10 +842,10 @@ section .container {
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.18);
   border: 0;
   transition: 0.3s;
   color: #fff;
@@ -856,27 +856,27 @@ section .container {
 }
 
 .contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.721);
   opacity: 1;
 }
 
 .contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0,0, 0.721);
   opacity: 1;
 }
 
 .contact .php-email-form input:-ms-input-placeholder, .contact .php-email-form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0,0, 0.721);
   opacity: 1;
 }
 
 .contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0,0, 0.721);
   opacity: 1;
 }
 
 .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0,0, 0.721);
   opacity: 1;
 }
 
@@ -903,27 +903,27 @@ section .container {
 
 
 .contact-inputs {
-  background: linear-gradient(black, transparent);
+  background: linear-gradient(silver, transparent);
   border-radius:20px;
 }
 
 input#email.form-control {
-  background: linear-gradient(black, transparent); 
+  background: linear-gradient(silver, transparent); 
   border-radius: 20px;
   padding: 20px;
 }
 input#name.form-control {
-  background: linear-gradient(black, transparent); 
+  background: linear-gradient(silver, transparent); 
   border-radius: 20px;
   padding: 20px;
 }
 input#subject.form-control {
-  background: linear-gradient(black, transparent); 
+  background: linear-gradient(silver, transparent); 
   border-radius: 20px;
   padding: 20px;
 }
 input#message.form-control {
-  background: linear-gradient(black, transparent); 
+  background: linear-gradient(silver, transparent); 
   border-radius: 20px;
   padding: 20px;
 }
@@ -1055,4 +1055,49 @@ div.info-box {
 
 .credits a:hover {
   color: #fff;
+}
+
+/* Pre loader */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(94, 122, 128, 0.954), transparent);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 5px;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
 }
